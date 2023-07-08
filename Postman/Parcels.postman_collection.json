@@ -1,0 +1,54 @@
+{
+	"info": {
+		"_postman_id": "e80eff85-4a64-4481-a34c-77620f3252c6",
+		"name": "Parcels",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9984054"
+	},
+	"item": [
+		{
+			"name": "Get parcel by number",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/parcels/850f6335d7",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"parcels",
+						"850f6335d7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add parcel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"size\": \"L\",\r\n    \"user_id\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/parcels",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"parcels"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
